@@ -31,12 +31,3 @@ public class EmployeeService {
         return false;
     }
 
-    public boolean deleteEmployee(int id) {
-        Employee emp = searchEmployee(id);
-        if (emp != null) {
-            employees.remove(emp);
-            return true;
-        }
-        return false;
-    }
-}
